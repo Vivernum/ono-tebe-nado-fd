@@ -13,9 +13,24 @@
 
   <body>
     <header class="header">
-      <nav></nav>
-      <a></a>
-      <address></address>
+      <nav class="menu">
+        <ul class="menu__header-list">
+
+          <!-- Здесь, чтобы убрать маркер у первого элемента списка, присвоил ему класс, который теперь
+           содержит стили и для текста, и для списка. Не хотелось создавать отдельный класс только для
+           того, чтобы убрать маркер. Такое решение приемлимо или стоит избегать подобного?  -->
+
+          <li class="menu__item-active"><a class="menu__item menu__item-active">главная</a></li>
+          <li><a class="menu__item" href="#0">посмотреть лоты</a></li>
+          <li><a class="menu__item" href="#0">об аукционе</a></li>
+        </ul>
+      </nav>
+      <a class="header__logo-link" href="#0"><img class="header__logo" src="./images/logo-black.svg" alt="Логотип"/></a>
+      <address class="contact-info">
+        <span class="contact-info__item contact-info__item-underlined">+9 999 555 5555</span>
+        <span class="contact-info__item contact-info__item-underlined">info@sobaka.ge</span>
+        <span class="contact-info__item">наб. Принсенграхт 263- 265, Амстердам</span>
+      </address>
     </header>
 
     <main class="main">
@@ -81,8 +96,14 @@
       
       <address></address>
 
-      <nav></nav>
-      
+      <nav class="menu">
+        <ul class="menu__footer-list">
+          <li><a class="menu__item menu__item-active" href="#0">главная</a></li>
+          <li><a class="menu__item" href="#0">посмотреть лоты</a></li>
+          <li><a class="menu__item" href="#0">об аукционе</a></li>
+        </ul>
+      </nav>
+
       <div>
         <a><img/></a>
         <a><img/></a>
