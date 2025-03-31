@@ -83,6 +83,66 @@ html {
     background-color: rgb(0, 0, 0, 0.6);
 }
 
+.cover__title {
+    font-size: 100px;
+    line-height: 115px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.letter-spacing-extended {
+    letter-spacing: .3em;
+}
+
+.no-letter-spacing {
+    margin-right: -.3em;
+}
+
+.aligned-text {
+    display: block;
+    text-align: start;
+}
+
+.aligned-text_center {
+    display: block;
+    text-align: center;
+}
+
+.aligned-text_right {
+    display: block;
+    text-align: end;
+}
+
+.cover__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.cover__description-text {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    word-spacing: .9em;
+}
+
+.bet-button {
+    width: 256px;
+    height: 51px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
 /*main section styles -- lots*/
 
 .lots {
