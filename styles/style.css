@@ -40,7 +40,6 @@ html {
 
 .header__logo {
     width: 148px;
-    height: 105px;
 }
 
 .contact-info {
@@ -240,8 +239,44 @@ html {
 /*main section styles -- about*/
 
 .about {
-    margin: 0 0 180px 0;
-    padding: 35px 0 13px 47px;
+    margin: 0 24px 180px;
+    display: grid;
+    grid-template-columns: 334px 1fr;
+}
+
+.about__logo{
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0 0 47px;
+}
+
+.about__logo-image{
+    width: 148px;
+}
+
+.about__title {
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin: 135px 0 100px 0;
+}
+
+.about__text {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.about__text-margin {
+    margin-bottom: 24px;
 }
 
 /*footer styles*/
