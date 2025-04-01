@@ -282,5 +282,31 @@ html {
 /*footer styles*/
 
 .footer {
+    height: 180px;
     padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contact-info {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    width: 240px;
+}
+
+.menu__footer-list {
+    list-style-type: none;
+    text-align: center;
+}
+
+.footer__social-list {
+    list-style-type: none;
+    display: flex;
+    gap: 48px;
+}
+
+.footer__social-icon {
+    width: 48px;
+    height: 48px;
 }
