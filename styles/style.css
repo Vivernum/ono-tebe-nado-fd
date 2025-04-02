@@ -3,7 +3,7 @@
 .menu {
     font-size: 18px;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 1em;
 }
 
 .menu__item {
@@ -288,7 +288,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
-    width: 240px;
+    width: 265px;
 }
 
 .menu__footer-list {
