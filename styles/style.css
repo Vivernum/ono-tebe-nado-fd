@@ -1,9 +1,15 @@
 /* mutual menu's styles */
 
+/* добавил этот селектор, чтобы убрать возможность
+пройти по ссылке, когда мы находимся на нужной странице */
+
+.link__disable {
+    pointer-events: none;
+}
+
 .menu {
     font-size: 18px;
     font-weight: 400;
-    line-height: 1em;
 }
 
 .menu__item {
@@ -18,11 +24,10 @@
 /*Header styles*/
 
 .header {
-    padding: 0 50px;
+    padding: 92px 50px 96px;
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    height: 293px;
     width: 100%;
 }
 
@@ -32,7 +37,11 @@
     gap: 32px;
 }
 
-.header__logo {
+/* пришлось добавить display: block, потому что иначе
+у ссылки, в которую обернут логотип, появляются 4px высоты*/
+
+.header__logo-image {
+    display: block;
     width: 148px;
     height: 105px;
 }
@@ -131,7 +140,7 @@
 
 .bet-button {
     width: 256px;
-    height: 51px;
+    min-height: 51px;
     color: #fff;
     font-size: 22px;
     line-height: 1em;
@@ -180,6 +189,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .card__title {
@@ -203,23 +215,14 @@
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .lots__look-more-link {
@@ -263,7 +266,7 @@
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1em;
-    margin: 135px 0 100px 0;
+    margin: 136px 0 100px 0;
 }
 
 .about__text {
@@ -284,13 +287,18 @@
     padding: 0 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
 }
 
-.footer__contact-info {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.3px;
-    width: 265px;
+/* я так и не смог придумать способ убрать отступ 
+у контактной информации, не создавая новый класс, а
+чтобы выровнить этот блок по правому краю в первом 
+случае, я не могу использовать space-between из-за 
+min-content */
+
+.contact-info__margin-nullificator {
+    margin: 0 !important;
+    width: 265px !important;
 }
 
 .menu__footer-list {
